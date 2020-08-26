@@ -16,7 +16,7 @@ pipeline{
             steps{
                 sh "tree"
                 sh "hostname"
-                //sh "mvn clean package"
+                sh "mvn clean package"
             }   
         } 
     }   
