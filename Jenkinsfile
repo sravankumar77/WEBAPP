@@ -14,7 +14,7 @@ pipeline{
         } 
         stage("maven build"){
             steps{
-                sh "tree"
+                
                 sh "hostname"
                 sh "mvn clean package"
             }   
