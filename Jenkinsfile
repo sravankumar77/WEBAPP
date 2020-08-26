@@ -22,7 +22,7 @@ pipeline{
         
         stage("docker build"){
             steps{
-                sh "cp target/java-tomcat-maven-example.war /usr/share/tomcat/webapps"
+                sh "sudo cp target/java-tomcat-maven-example.war /usr/share/tomcat/webapps"
                  
                 //step([$class: 'DockerComposeBuilder', dockerComposeFile: 'docker-compose.yml', option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
             }   
