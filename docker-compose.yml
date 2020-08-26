@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tomcatserver:
+    build: ./
+    #image: tomcat:9.0-jdk11-openjdk
+    container_name: mytomcat
+    restart: always
+    ports:
+      - 8080:8080
