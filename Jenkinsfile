@@ -5,7 +5,7 @@ pipeline{
     }
     
     stages{
-        stage("git checkout"){
+        stage("checkout"){
             steps{
                 
                 sh "ls"
@@ -20,7 +20,7 @@ pipeline{
             }   
         } 
         
-        stage("docker build"){
+        stage("deploy"){
             steps{
                 sh "sudo cp target/java-tomcat-maven-example.war /usr/share/tomcat/webapps"
                  
