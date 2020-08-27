@@ -1,5 +1,5 @@
 # java-tomcat-maven-example
-# todo
+#written unit test cases
 
 This is an example ready-to-deploy java web application built for Tomcat using Maven and webapp-runner.
 
