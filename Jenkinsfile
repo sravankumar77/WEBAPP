@@ -22,7 +22,7 @@ pipeline{
          stage("Email"){
             steps{
                 
-                emailext (to: 'durgamsanthosh141@gmail.com', replyTo: 'durgamsanthosh141@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", 
+                emailext (to: 'sravankumar7798@gmail.com', replyTo: 'durgamsanthosh141@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", 
                           body: readFile("target/surefire-reports/AppTest.txt"), mimeType: 'text/plain');
             }   
         } 
