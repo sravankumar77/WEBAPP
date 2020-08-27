@@ -36,7 +36,7 @@ public class AppTest
       @Test
       public void testMultiply(){
             int result=myapp.multiply(2,3);
-             assertEquals(result,5);
+             assertEquals(result,6);
             
 	}
 }
