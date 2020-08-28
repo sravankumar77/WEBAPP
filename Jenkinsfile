@@ -5,13 +5,7 @@ pipeline{
     }
     
     stages{
-        stage("checkout"){
-            steps{
-                
-                sh "ls"
-                sh "pwd"
-            }   
-        } 
+        
         stage("maven build"){
             steps{
                 
