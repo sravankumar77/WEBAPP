@@ -1,7 +1,6 @@
 # java-tomcat-maven-example
 #written unit test cases
 #test reports through email
-#mail problem
 
 This is an example ready-to-deploy java web application built for Tomcat using Maven and webapp-runner.
 
