@@ -13,7 +13,7 @@ pipeline{
             steps{
                 gitCheckout(
                     branch: "master",
-                    url: "https://github.com/Indianche/simplewebapp.git"
+                    url: "https://github.com/sravankumar77/WEBAPP.git"
                 )
             }
         }
