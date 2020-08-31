@@ -20,9 +20,7 @@ pipeline{
         
         stage("maven build"){
             steps{
-                
-                sh "hostname"
-                sh "mvn clean package"
+                mavenBuild()
             }   
         } 
          /*stage("Email"){
