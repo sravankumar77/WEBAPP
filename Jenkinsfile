@@ -2,7 +2,7 @@
 @Library('jenkins-shared-library@master') _
 
 pipeline{
-    agent {label 'java'}
+    agent any
     environment{
        PATH = "/usr/share/maven/bin:$PATH"
     }
