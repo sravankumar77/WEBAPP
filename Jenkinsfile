@@ -12,7 +12,7 @@ pipeline{
         stage('Git Checkout') {
             gitCheckout(
                 branch: "master",
-                url: "https://github.com/spring-projects/spring-petclinic.git"
+                url: "https://github.com/Indianche/simplewebapp.git"
             )
         }
         
