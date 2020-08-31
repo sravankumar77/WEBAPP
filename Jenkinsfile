@@ -10,10 +10,12 @@ pipeline{
     stages{
        
         stage('Git Checkout') {
-            gitCheckout(
-                branch: "master",
-                url: "https://github.com/Indianche/simplewebapp.git"
-            )
+            steps{
+                gitCheckout(
+                    branch: "master",
+                    url: "https://github.com/Indianche/simplewebapp.git"
+                )
+            }
         }
         
         stage("maven build"){
