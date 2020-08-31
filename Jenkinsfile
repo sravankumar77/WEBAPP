@@ -1,3 +1,6 @@
+
+@Library('jenkins-shared-library@master') _
+
 pipeline{
     agent {label 'java'}
     environment{
@@ -5,6 +8,13 @@ pipeline{
     }
     
     stages{
+       
+        stage('Git Checkout') {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/spring-projects/spring-petclinic.git"
+            )
+        }
         
         stage("maven build"){
             steps{
@@ -13,13 +23,13 @@ pipeline{
                 sh "mvn clean package"
             }   
         } 
-         stage("Email"){
+         /*stage("Email"){
             steps{
                 
                 emailext (to: 'durgamsanthosh141@gmail.com', replyTo: 'durgamsanthosh141@gmail.com', subject: "Test Reports from - '${env.JOB_NAME}' ", 
                           body: readFile("target/surefire-reports/AppTest.txt"), mimeType: 'text/plain');
             }   
-        } 
+        } */
         
         
         stage("deploy"){
